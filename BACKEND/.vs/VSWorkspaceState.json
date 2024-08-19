@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\webapi",
+    "\\webapi\\bin",
+    "\\webapi\\bin\\Debug",
+    "\\webapi\\bin\\Release",
+    "\\webapi\\Controllers",
+    "\\webapi\\Models",
+    "\\webapi\\obj",
+    "\\webapi\\obj\\Debug",
+    "\\webapi\\obj\\Release"
+  ],
+  "SelectedNode": "\\webapi\\Controllers",
+  "PreviewInSolutionExplorer": false
+}
