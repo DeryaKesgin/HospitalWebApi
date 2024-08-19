@@ -1,0 +1,575 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\derya\\source\\repos\\webapi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\controllers\\examinationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\controllers\\examinationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\controllers\\hastacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\controllers\\hastacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\models\\diagnosis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\models\\diagnosis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\models\\hasta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\models\\hasta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\migrations\\20240815141504_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\migrations\\20240815141504_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\controllers\\prescriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\controllers\\prescriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240805084503_migrationnnnN.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webapi\\Migrations\\20240805084503_migrationnnnN.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240805084201_migrationnnn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webapi\\Migrations\\20240805084201_migrationnnn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\migrations\\20240808123428_exeminationupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\migrations\\20240808123428_exeminationupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\migrations\\20240808084735_examinationupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\migrations\\20240808084735_examinationupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\models\\examinationview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\models\\examinationview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\migrations\\20240805135156_createexamination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\migrations\\20240805135156_createexamination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\models\\examination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\models\\examination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\migrations\\20240805090248_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\migrations\\20240805090248_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\controllers\\diagnosiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\controllers\\diagnosiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\webapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\webapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\migrations\\sampledbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\migrations\\sampledbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\migrations\\20240816081131_testactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\migrations\\20240816081131_testactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\migrations\\20240816075130_activitycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\migrations\\20240816075130_activitycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\migrations\\20240816073736_activitytrue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\migrations\\20240816073736_activitytrue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|c:\\users\\derya\\source\\repos\\webapi\\webapi\\migrations\\20240816073309_activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70F7B78F-4A44-4A51-AD9F-12E3C45290FF}|webapi\\webapi.csproj|solutionrelative:webapi\\migrations\\20240816073309_activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 22,
+          "SelectedChildIndex": 25,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20240816081131_testactivity.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240816081131_testactivity.cs",
+              "RelativeDocumentMoniker": "webapi\\Migrations\\20240816081131_testactivity.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240816081131_testactivity.cs",
+              "RelativeToolTip": "webapi\\Migrations\\20240816081131_testactivity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T08:11:31.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20240816075130_activitycontrol.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240816075130_activitycontrol.cs",
+              "RelativeDocumentMoniker": "webapi\\Migrations\\20240816075130_activitycontrol.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240816075130_activitycontrol.cs",
+              "RelativeToolTip": "webapi\\Migrations\\20240816075130_activitycontrol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T07:51:30.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20240816073736_activitytrue.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240816073736_activitytrue.cs",
+              "RelativeDocumentMoniker": "webapi\\Migrations\\20240816073736_activitytrue.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240816073736_activitytrue.cs",
+              "RelativeToolTip": "webapi\\Migrations\\20240816073736_activitytrue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T07:37:36.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20240816073309_activity.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240816073309_activity.cs",
+              "RelativeDocumentMoniker": "webapi\\Migrations\\20240816073309_activity.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240816073309_activity.cs",
+              "RelativeToolTip": "webapi\\Migrations\\20240816073309_activity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T07:33:09.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20240815141504_test.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240815141504_test.cs",
+              "RelativeDocumentMoniker": "webapi\\Migrations\\20240815141504_test.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240815141504_test.cs",
+              "RelativeToolTip": "webapi\\Migrations\\20240815141504_test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T14:15:04.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240808123428_EXEMINATIONUPDATE.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240808123428_EXEMINATIONUPDATE.cs",
+              "RelativeDocumentMoniker": "webapi\\Migrations\\20240808123428_EXEMINATIONUPDATE.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240808123428_EXEMINATIONUPDATE.cs",
+              "RelativeToolTip": "webapi\\Migrations\\20240808123428_EXEMINATIONUPDATE.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T12:34:28.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20240808084735_ExaminationUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240808084735_ExaminationUpdate.cs",
+              "RelativeDocumentMoniker": "webapi\\Migrations\\20240808084735_ExaminationUpdate.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240808084735_ExaminationUpdate.cs",
+              "RelativeToolTip": "webapi\\Migrations\\20240808084735_ExaminationUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T08:47:35.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ExaminationView.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\ExaminationView.cs",
+              "RelativeDocumentMoniker": "webapi\\Models\\ExaminationView.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\ExaminationView.cs",
+              "RelativeToolTip": "webapi\\Models\\ExaminationView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T11:35:02.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExaminationController.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Controllers\\ExaminationController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\ExaminationController.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Controllers\\ExaminationController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\ExaminationController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAEkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T13:57:43.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20240805135156_CreateExamination.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240805135156_CreateExamination.cs",
+              "RelativeDocumentMoniker": "webapi\\Migrations\\20240805135156_CreateExamination.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240805135156_CreateExamination.cs",
+              "RelativeToolTip": "webapi\\Migrations\\20240805135156_CreateExamination.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T13:51:56.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Examination.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\Examination.cs",
+              "RelativeDocumentMoniker": "webapi\\Models\\Examination.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\Examination.cs",
+              "RelativeToolTip": "webapi\\Models\\Examination.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T13:49:08.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20240805090248_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240805090248_InitialMigration.cs",
+              "RelativeDocumentMoniker": "webapi\\Migrations\\20240805090248_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240805090248_InitialMigration.cs",
+              "RelativeToolTip": "webapi\\Migrations\\20240805090248_InitialMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T09:02:48.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240805084503_migrationnnnN.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240805084503_migrationnnnN.cs",
+              "RelativeDocumentMoniker": "webapi\\Migrations\\20240805084503_migrationnnnN.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240805084503_migrationnnnN.cs",
+              "RelativeToolTip": "webapi\\Migrations\\20240805084503_migrationnnnN.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T08:45:03.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20240805084201_migrationnnn.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240805084201_migrationnnn.cs",
+              "RelativeDocumentMoniker": "webapi\\Migrations\\20240805084201_migrationnnn.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\20240805084201_migrationnnn.cs",
+              "RelativeToolTip": "webapi\\Migrations\\20240805084201_migrationnnn.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T08:42:01.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PrescriptionController.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Controllers\\PrescriptionController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\PrescriptionController.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Controllers\\PrescriptionController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\PrescriptionController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T08:17:43.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DiagnosisController.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Controllers\\DiagnosisController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\DiagnosisController.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Controllers\\DiagnosisController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\DiagnosisController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAIBZwCoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T08:17:12.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Prescription.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\Prescription.cs",
+              "RelativeDocumentMoniker": "webapi\\Models\\Prescription.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\Prescription.cs",
+              "RelativeToolTip": "webapi\\Models\\Prescription.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T07:43:04.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Diagnosis.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\Diagnosis.cs",
+              "RelativeDocumentMoniker": "webapi\\Models\\Diagnosis.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\Diagnosis.cs",
+              "RelativeToolTip": "webapi\\Models\\Diagnosis.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T07:42:13.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "webapi\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\WeatherForecast.cs",
+              "RelativeToolTip": "webapi\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T07:04:17.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAL0UAAAAAAAAAAAmwMgUAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-07-30T13:30:13.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "webapi",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\webapi.csproj",
+              "RelativeDocumentMoniker": "webapi\\webapi.csproj",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\webapi.csproj",
+              "RelativeToolTip": "webapi\\webapi.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-30T12:54:18.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwC0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T07:20:44.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "webapi\\Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\Admin.cs",
+              "RelativeToolTip": "webapi\\Models\\Admin.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T06:49:29.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SampleDBContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\SampleDBContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "webapi\\Migrations\\SampleDBContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Migrations\\SampleDBContextModelSnapshot.cs",
+              "RelativeToolTip": "webapi\\Migrations\\SampleDBContextModelSnapshot.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAGBnwNsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T13:28:37.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAuwGwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T08:58:21.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "webapi\\Models\\Doctor.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\Doctor.cs",
+              "RelativeToolTip": "webapi\\Models\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T08:54:32.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "webapi\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "webapi\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABgAAAAAAAAAACBjwB0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-26T06:33:20.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HastaController.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Controllers\\HastaController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\HastaController.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Controllers\\HastaController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\HastaController.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAJQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T14:28:21.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T14:25:38.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\appsettings.json",
+              "RelativeDocumentMoniker": "webapi\\appsettings.json",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\appsettings.json",
+              "RelativeToolTip": "webapi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-25T13:59:32.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Program.cs",
+              "RelativeDocumentMoniker": "webapi\\Program.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Program.cs",
+              "RelativeToolTip": "webapi\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAlwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T13:58:06.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Dbcontext.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\Dbcontext.cs",
+              "RelativeDocumentMoniker": "webapi\\Models\\Dbcontext.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\Dbcontext.cs",
+              "RelativeToolTip": "webapi\\Models\\Dbcontext.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwBEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T13:54:36.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Hasta.cs",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\Hasta.cs",
+              "RelativeDocumentMoniker": "webapi\\Models\\Hasta.cs",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\Models\\Hasta.cs",
+              "RelativeToolTip": "webapi\\Models\\Hasta.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAcwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T13:52:43.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "webapi.csproj",
+              "DocumentMoniker": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\webapi.csproj",
+              "RelativeDocumentMoniker": "webapi\\webapi.csproj",
+              "ToolTip": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\webapi.csproj",
+              "RelativeToolTip": "webapi\\webapi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-25T13:52:08.297Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 378,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
