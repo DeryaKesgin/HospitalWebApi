@@ -107,29 +107,36 @@ namespace webapi.Controllers
             return Ok();
         }
         //sonnnnnxdcf
+
+
         [HttpPut("{id}")]
         public IActionResult UpdateDoctor(int id, [FromBody] Doctor updatedDoctor)
         {
-            // Mevcut doktoru getir
+            if (updatedDoctor == null || id <= 0)
+            {
+                return BadRequest();
+            }
+
             var existingDoctor = _context.Doctor.Find(id);
             if (existingDoctor == null)
             {
-                return NotFound("Doktor bulunamadı.");
+                return NotFound();
             }
 
-            // Güncelleme yapılacak alanları mevcut bilgilerle güncelle
-            existingDoctor.FirstName = updatedDoctor.FirstName ?? existingDoctor.FirstName;
-            existingDoctor.LastName = updatedDoctor.LastName ?? existingDoctor.LastName;
-            existingDoctor.Email = updatedDoctor.Email ?? existingDoctor.Email;
-            existingDoctor.Password = updatedDoctor.Password ?? existingDoctor.Password;
+            existingDoctor.FirstName = updatedDoctor.FirstName;
+            existingDoctor.LastName = updatedDoctor.LastName;
+            existingDoctor.Email = updatedDoctor.Email;
+            existingDoctor.Password = updatedDoctor.Password;
             existingDoctor.Activity = updatedDoctor.Activity;
 
-            _context.Entry(existingDoctor).State = EntityState.Modified;
+            _context.Doctor.Update(existingDoctor);
             _context.SaveChanges();
 
-            // Başarılı güncelleme mesajı gönder
-            return Ok(new { message = "Doktor bilgileri başarıyla güncellendi." });
+            return Ok("Güncelleme başarılı.");
         }
+
+
+        
 
 
 
