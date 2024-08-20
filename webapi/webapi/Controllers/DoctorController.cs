@@ -106,7 +106,7 @@ namespace webapi.Controllers
             _context.SaveChanges();
             return Ok();
         }
-        //birdeneme
+        //sonnnnnxdcf
         [HttpPut("{id}")]
         public IActionResult UpdateDoctor(int id, [FromBody] Doctor updatedDoctor)
         {

@@ -140,7 +140,7 @@ namespace webapi.Controllers
         [HttpPut("{id}")]
         public IActionResult UpdateHasta(int id, [FromBody] Hasta updatedHasta)
         {
-            if (updatedHasta == null || id != updatedHasta.HastaId)
+            if (updatedHasta == null || id <=0)
             {
                 return BadRequest();
             }
@@ -150,7 +150,7 @@ namespace webapi.Controllers
             {
                 return NotFound();
             }
-            existingHasta.HastaId = updatedHasta.HastaId;
+          //  existingHasta.HastaId = updatedHasta.HastaId;
 
             existingHasta.FirstName = updatedHasta.FirstName;
             existingHasta.LastName = updatedHasta.LastName;
