@@ -4794,11 +4794,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\webapi.csproj",
+      "projectUniqueName": "C:\\Users\\derya\\OneDrive\\Belgeler\\GitHub\\HospitalWebApi\\webapi\\webapi\\webapi.csproj",
       "projectName": "webapi",
-      "projectPath": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\webapi.csproj",
+      "projectPath": "C:\\Users\\derya\\OneDrive\\Belgeler\\GitHub\\HospitalWebApi\\webapi\\webapi\\webapi.csproj",
       "packagesPath": "C:\\Users\\derya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\derya\\source\\repos\\webapi\\webapi\\obj\\",
+      "outputPath": "C:\\Users\\derya\\OneDrive\\Belgeler\\GitHub\\HospitalWebApi\\webapi\\webapi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\derya\\AppData\\Roaming\\NuGet\\NuGet.Config",
