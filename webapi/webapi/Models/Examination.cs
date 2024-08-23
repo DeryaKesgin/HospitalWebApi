@@ -10,8 +10,8 @@ namespace webapi.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        public int HastaId { get; set; }
-        public int DoktorId { get; set; }
+        public int PatientId { get; set; }
+        public int DoctorId { get; set; }
 
         [MaxLength(500)]
         public string Complaint { get; set; }

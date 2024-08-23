@@ -12,10 +12,10 @@ namespace webapi.Models
         public int Id { get; set; }
 
     
-        public int HastaId { get; set; }
+        public int PatientId { get; set; }
 
        
-        public int DoktorId { get; set; }
+        public int DoctorId { get; set; }
 
         [MaxLength(500)]
         public string Medication { get; set; }

@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace webapi.Models
 {
-    public class Hasta
+    public class Patient
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int HastaId { get; set; }
+        public int PatientId { get; set; }
         
         [MaxLength(50)]
         public string FirstName { get; set; }
@@ -24,7 +24,7 @@ namespace webapi.Models
         public bool Activity { get; set; } = true;
 
 
-        public Hasta()
+        public Patient()
         {
             Activity = true;
         }

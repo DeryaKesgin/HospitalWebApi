@@ -17,7 +17,7 @@ namespace webapi.Controllers
 
 
 
-        [HttpPost("addDiagnosis")]
+        [HttpPost("AddDiagnosis")]
         public IActionResult AddDiagnosis([FromBody] Diagnosis diagnosis)
         {
             if (diagnosis == null)
@@ -25,8 +25,8 @@ namespace webapi.Controllers
                 return BadRequest("Diagnosis is null");
             }
 
-            var patient = _context.Hasta.FirstOrDefault(h => h.HastaId == diagnosis.HastaId);
-            var doctor = _context.Doctor.FirstOrDefault(d => d.DoktorId == diagnosis.DoktorId);
+            var patient = _context.Patient.FirstOrDefault(h => h.PatientId == diagnosis.PatientId);
+            var doctor = _context.Doctor.FirstOrDefault(d => d.DoctorId == diagnosis.DoctorId);
 
             if (patient == null || doctor == null)
             {
@@ -38,10 +38,10 @@ namespace webapi.Controllers
             return Ok();
         }
 
-        [HttpGet("ByPatient/{hastaId}")]
-        public IActionResult GetDiagnosesByPatient(int hastaId)
+        [HttpGet("ByPatient/{PatientId}")]
+        public IActionResult GetDiagnosesByPatient(int PatientId)
         {
-            var diagnoses = _context.Diagnosis.Where(d => d.HastaId == hastaId).ToList();
+            var diagnoses = _context.Diagnosis.Where(d => d.PatientId == PatientId).ToList();
             return Ok(diagnoses);
         }
 

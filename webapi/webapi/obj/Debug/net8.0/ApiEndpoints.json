@@ -47,14 +47,30 @@
   },
   {
     "ContainingType": "webapi.Controllers.AdminController",
-    "Method": "Getkullaniciadi",
-    "RelativePath": "api/Admin/kullaniciAdi/{kullaniciAdi}",
+    "Method": "Login",
+    "RelativePath": "api/Admin/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "LoginModel",
+        "Type": "webapi.Controllers.AdminRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webapi.Controllers.AdminController",
+    "Method": "GetPassword",
+    "RelativePath": "api/Admin/Password/{Password}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "kullaniciAdi",
+        "Name": "Password",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -73,30 +89,14 @@
   },
   {
     "ContainingType": "webapi.Controllers.AdminController",
-    "Method": "Login",
-    "RelativePath": "api/Admin/login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "loginModel",
-        "Type": "webapi.Controllers.AdminRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "webapi.Controllers.AdminController",
-    "Method": "Getsifre",
-    "RelativePath": "api/Admin/sifre/{sifre}",
+    "Method": "GetUsername",
+    "RelativePath": "api/Admin/UserName/{UserName}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "sifre",
+        "Name": "UserName",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -116,7 +116,7 @@
   {
     "ContainingType": "webapi.Controllers.DiagnosisController",
     "Method": "AddDiagnosis",
-    "RelativePath": "api/Diagnosis/addDiagnosis",
+    "RelativePath": "api/Diagnosis/AddDiagnosis",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -132,13 +132,13 @@
   {
     "ContainingType": "webapi.Controllers.DiagnosisController",
     "Method": "GetDiagnosesByPatient",
-    "RelativePath": "api/Diagnosis/ByPatient/{hastaId}",
+    "RelativePath": "api/Diagnosis/ByPatient/{PatientId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "hastaId",
+        "Name": "PatientId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -174,7 +174,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "doktor",
+        "Name": "doctor",
         "Type": "webapi.Models.Doctor",
         "IsRequired": true
       }
@@ -256,15 +256,36 @@
   },
   {
     "ContainingType": "webapi.Controllers.DoctorController",
-    "Method": "GetDoctorByUserName",
-    "RelativePath": "api/Doctor/kullaniciAdi/{kullaniciAdi}",
+    "Method": "Login",
+    "RelativePath": "api/Doctor/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "LoginModel",
+        "Type": "webapi.Controllers.DoctorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "webapi.Controllers.DoctorController",
+    "Method": "GetDoctorByPassword",
+    "RelativePath": "api/Doctor/Password/{Password}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "kullaniciAdi",
+        "Name": "sifre",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "",
         "IsRequired": true
       }
     ],
@@ -282,30 +303,14 @@
   },
   {
     "ContainingType": "webapi.Controllers.DoctorController",
-    "Method": "Login",
-    "RelativePath": "api/Doctor/login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "loginModel",
-        "Type": "webapi.Controllers.DoctorRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "webapi.Controllers.DoctorController",
-    "Method": "GetDoctorByPassword",
-    "RelativePath": "api/Doctor/sifre/{sifre}",
+    "Method": "GetDoctorByUserName",
+    "RelativePath": "api/Doctor/UserName/{UserName}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "sifre",
+        "Name": "UserName",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -346,7 +351,7 @@
   {
     "ContainingType": "webapi.Controllers.ExaminationController",
     "Method": "AddExamination",
-    "RelativePath": "api/Examination/addExamination",
+    "RelativePath": "api/Examination/AddExamination",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -362,13 +367,13 @@
   {
     "ContainingType": "webapi.Controllers.ExaminationController",
     "Method": "GetExaminationHistory",
-    "RelativePath": "api/Examination/history/{patientId}",
+    "RelativePath": "api/Examination/History/{PatientId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "patientId",
+        "Name": "PatientId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -392,16 +397,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "webapi.Controllers.HastaController",
-    "Method": "GetHastaList",
-    "RelativePath": "api/Hasta",
+    "ContainingType": "webapi.Controllers.PatientController",
+    "Method": "GetPatientList",
+    "RelativePath": "api/Patient",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[webapi.Models.Hasta, webapi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[webapi.Models.Patient, webapi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -412,22 +417,22 @@
     ]
   },
   {
-    "ContainingType": "webapi.Controllers.HastaController",
-    "Method": "CreateHasta",
-    "RelativePath": "api/Hasta",
+    "ContainingType": "webapi.Controllers.PatientController",
+    "Method": "CreatePatient",
+    "RelativePath": "api/Patient",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "hasta",
-        "Type": "webapi.Models.Hasta",
+        "Name": "patient",
+        "Type": "webapi.Models.Patient",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "webapi.Models.Hasta",
+        "Type": "webapi.Models.Patient",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -438,9 +443,9 @@
     ]
   },
   {
-    "ContainingType": "webapi.Controllers.HastaController",
-    "Method": "GetHastaById",
-    "RelativePath": "api/Hasta/{id}",
+    "ContainingType": "webapi.Controllers.PatientController",
+    "Method": "GetPatientById",
+    "RelativePath": "api/Patient/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -453,7 +458,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "webapi.Models.Hasta",
+        "Type": "webapi.Models.Patient",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -464,9 +469,9 @@
     ]
   },
   {
-    "ContainingType": "webapi.Controllers.HastaController",
-    "Method": "UpdateHasta",
-    "RelativePath": "api/Hasta/{id}",
+    "ContainingType": "webapi.Controllers.PatientController",
+    "Method": "UpdatePatient",
+    "RelativePath": "api/Patient/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -477,17 +482,17 @@
         "IsRequired": true
       },
       {
-        "Name": "updatedHasta",
-        "Type": "webapi.Models.Hasta",
+        "Name": "updatedPatient",
+        "Type": "webapi.Models.Patient",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "webapi.Controllers.HastaController",
-    "Method": "DeleteHasta",
-    "RelativePath": "api/Hasta/{id}",
+    "ContainingType": "webapi.Controllers.PatientController",
+    "Method": "DeletePatient",
+    "RelativePath": "api/Patient/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -501,64 +506,38 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "webapi.Controllers.HastaController",
-    "Method": "GetHastaByUserName",
-    "RelativePath": "api/Hasta/kullaniciAdi/{kullaniciAdi}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "kullaniciAdi",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "webapi.Models.Hasta",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "webapi.Controllers.HastaController",
+    "ContainingType": "webapi.Controllers.PatientController",
     "Method": "Login",
-    "RelativePath": "api/Hasta/login",
+    "RelativePath": "api/Patient/Login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "loginModel",
-        "Type": "webapi.Controllers.HastaRequest",
+        "Type": "webapi.Controllers.PatientRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "webapi.Controllers.HastaController",
-    "Method": "GetHastaByPassword",
-    "RelativePath": "api/Hasta/sifre/{sifre}",
+    "ContainingType": "webapi.Controllers.PatientController",
+    "Method": "GetPatientByPassword",
+    "RelativePath": "api/Patient/Password/{Password}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "sifre",
+        "Name": "password",
         "Type": "System.String",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "webapi.Models.Hasta",
+        "Type": "webapi.Models.Patient",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -569,9 +548,35 @@
     ]
   },
   {
-    "ContainingType": "webapi.Controllers.HastaController",
-    "Method": "GetHastas",
-    "RelativePath": "api/Hasta/WithFilter",
+    "ContainingType": "webapi.Controllers.PatientController",
+    "Method": "GetPatientByUserName",
+    "RelativePath": "api/Patient/UserName/{UserName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "webapi.Models.Patient",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "webapi.Controllers.PatientController",
+    "Method": "GetPatients",
+    "RelativePath": "api/Patient/WithFilter",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -590,9 +595,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "webapi.Controllers.HastaController",
-    "Method": "GetHastasWithFilterForDoctor",
-    "RelativePath": "api/Hasta/WithFilterForDoctor",
+    "ContainingType": "webapi.Controllers.PatientController",
+    "Method": "GetPatientsWithFilterForDoctor",
+    "RelativePath": "api/Patient/WithFilterForDoctor",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -629,13 +634,13 @@
   {
     "ContainingType": "webapi.Controllers.PrescriptionController",
     "Method": "GetPrescriptionsByPatient",
-    "RelativePath": "api/Prescription/ByPatient/{hastaId}",
+    "RelativePath": "api/Prescription/ByPatient/{patientId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "hastaId",
+        "Name": "patientId",
         "Type": "System.Int32",
         "IsRequired": true
       }

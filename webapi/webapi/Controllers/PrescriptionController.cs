@@ -26,8 +26,8 @@ namespace webapi.Controllers
                 return BadRequest("Prescription is null");
             }
 
-            var patient = _context.Hasta.FirstOrDefault(h => h.HastaId == prescription.HastaId);
-            var doctor = _context.Doctor.FirstOrDefault(d => d.DoktorId == prescription.DoktorId);
+            var patient = _context.Patient.FirstOrDefault(h => h.PatientId == prescription.PatientId);
+            var doctor = _context.Doctor.FirstOrDefault(d => d.DoctorId == prescription.DoctorId);
 
             if (patient == null || doctor == null)
             {
@@ -39,10 +39,10 @@ namespace webapi.Controllers
             return Ok();
         }
 
-        [HttpGet("ByPatient/{hastaId}")]
-        public IActionResult GetPrescriptionsByPatient(int hastaId)
+        [HttpGet("ByPatient/{patientId}")]
+        public IActionResult GetPrescriptionsByPatient(int patientId)
         {
-            var prescriptions = _context.Prescription.Where(p => p.HastaId == hastaId).ToList();
+            var prescriptions = _context.Prescription.Where(p => p.PatientId == patientId).ToList();
             return Ok(prescriptions);
         }
 

@@ -9,7 +9,7 @@ namespace webapi.Models {
             : base(options)
         {
         }
-        public virtual DbSet<Hasta> Hasta { get; set; }
+        public virtual DbSet<Patient> Patient { get; set; }
         public virtual DbSet<Doctor> Doctor { get; set; }
         public virtual DbSet<Admin> Admin { get; set; }
         public virtual DbSet<Diagnosis> Diagnosis { get; set; }
@@ -19,15 +19,15 @@ namespace webapi.Models {
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Hasta>(entity => {
-                entity.HasKey(k => k.HastaId);
+            modelBuilder.Entity<Patient>(entity => {
+                entity.HasKey(k => k.PatientId);
             });
            
             modelBuilder.Entity<Admin>(entity => {
                 entity.HasKey(k => k.AdminId);
             });
             modelBuilder.Entity<Doctor>(entity => {
-                entity.HasKey(k => k.DoktorId);
+                entity.HasKey(k => k.DoctorId);
             });
             modelBuilder.Entity<Diagnosis>(entity => {
                 entity.HasKey(k => k.Id);

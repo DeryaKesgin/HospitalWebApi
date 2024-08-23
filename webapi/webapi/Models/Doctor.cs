@@ -7,7 +7,7 @@ namespace webapi.Models
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int DoktorId { get; set; }
+        public int DoctorId { get; set; }
 
             [MaxLength(50)]
             public string FirstName { get; set; }

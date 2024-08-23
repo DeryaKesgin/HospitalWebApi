@@ -42,10 +42,10 @@ namespace webapi.Controllers
             return _context.Doctor.ToList();
         }
 
-        [HttpGet("kullaniciAdi/{kullaniciAdi}")]
-        public ActionResult<Doctor> GetDoctorByUserName(string kullaniciAdi)
+        [HttpGet("UserName/{UserName}")]
+        public ActionResult<Doctor> GetDoctorByUserName(string UserName)
         {
-            var doctor = _context.Doctor.FirstOrDefault(d => d.FirstName == kullaniciAdi);
+            var doctor = _context.Doctor.FirstOrDefault(d => d.FirstName == UserName);
             if (doctor == null)
             {
                 return NotFound();
@@ -53,7 +53,7 @@ namespace webapi.Controllers
             return doctor;
         }
 
-        [HttpGet("sifre/{sifre}")]
+        [HttpGet("Password/{Password}")]
         public ActionResult<Doctor> GetDoctorByPassword(string sifre)
         {
             var doctor = _context.Doctor.FirstOrDefault(d => d.Password == sifre);
@@ -76,33 +76,33 @@ namespace webapi.Controllers
             return doctor;
         }
 
-        [HttpPost("login")]
-        public IActionResult Login([FromBody] DoctorRequest loginModel)
+        [HttpPost("Login")]
+        public IActionResult Login([FromBody] DoctorRequest LoginModel)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var doktor = _context.Doctor
-                .FirstOrDefault(a => a.Email == loginModel.Email && a.Password == loginModel.Password && a.Activity);
+            var doctor = _context.Doctor
+                .FirstOrDefault(a => a.Email == LoginModel.Email && a.Password == LoginModel.Password && a.Activity);
 
-            if (doktor == null)
+            if (doctor == null)
             {
-                return Ok(new { doktorInfo = (Doctor)null, success = false });
+                return Ok(new { doctorInfo = (Doctor)null, success = false });
             }
 
-            return Ok(new { doktorInfo = doktor, doktorInfo1 = doktor.FirstName, doktorInfo2 = doktor.LastName, success = true });
+            return Ok(new { doctorInfo = doctor, doctorInfo1 = doctor.FirstName, doctorInfo2 = doctor.LastName, success = true });
         }
 
         [HttpPost]
-        public ActionResult<Doctor> CreateDoctor(Doctor doktor)
+        public ActionResult<Doctor> CreateDoctor(Doctor doctor)
         {
-            if (doktor == null)
+            if (doctor == null)
             {
                 return BadRequest();
             }
-            _context.Doctor.Add(doktor);
+            _context.Doctor.Add(doctor);
             _context.SaveChanges();
             return Ok();
         }

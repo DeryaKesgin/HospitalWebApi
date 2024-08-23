@@ -27,10 +27,10 @@ namespace webapi.Controllers
         
 
         // GET: api/Customer/1
-        [HttpGet("kullaniciAdi/{kullaniciAdi}")]
-        public ActionResult<Admin> Getkullaniciadi(string kullaniciAdi)
+        [HttpGet("UserName/{UserName}")]
+        public ActionResult<Admin> GetUsername(string UserName)
         {
-            var admin = _context.Admin.Where((hast) => hast.FirstName == kullaniciAdi).FirstOrDefault();
+            var admin = _context.Admin.Where((hast) => hast.FirstName == UserName).FirstOrDefault();
             if (admin == null)
             {
                 return NotFound();
@@ -38,10 +38,10 @@ namespace webapi.Controllers
             return admin;
         }
 
-        [HttpGet("sifre/{sifre}")]
-        public ActionResult<Admin> Getsifre(string sifre)
+        [HttpGet("Password/{Password}")]
+        public ActionResult<Admin> GetPassword(string Password)
         {
-            var admin = _context.Admin.Where((hast) => hast.Password == sifre).FirstOrDefault();
+            var admin = _context.Admin.Where((hast) => hast.Password == Password).FirstOrDefault();
             if (admin == null)
             {
                 return NotFound();
@@ -49,8 +49,8 @@ namespace webapi.Controllers
             return admin;
         }
 
-        [HttpPost("login")]
-        public IActionResult Login([FromBody] AdminRequest loginModel)
+        [HttpPost("Login")]
+        public IActionResult Login([FromBody] AdminRequest LoginModel)
         {
             if (!ModelState.IsValid)
             {
@@ -58,7 +58,7 @@ namespace webapi.Controllers
             }
 
             var admin = _context.Admin
-                .FirstOrDefault(a => a.Email == loginModel.Email && a.Password == loginModel.Password);
+                .FirstOrDefault(a => a.Email == LoginModel.Email && a.Password == LoginModel.Password);
 
             if (admin == null)
             {
