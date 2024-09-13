@@ -1,8 +1,10 @@
-﻿using webapi.Models;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Linq;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using webapi.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace webapi.Controllers
@@ -12,10 +14,12 @@ namespace webapi.Controllers
     public class DoctorController : ControllerBase
     {
         private readonly SampleDBContext _context;
+        private readonly IConfiguration _configuration;
 
-        public DoctorController(SampleDBContext context)
+        public DoctorController(SampleDBContext context, IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration;
         }
 
         [HttpGet("WithFilter")]
@@ -54,9 +58,9 @@ namespace webapi.Controllers
         }
 
         [HttpGet("Password/{Password}")]
-        public ActionResult<Doctor> GetDoctorByPassword(string sifre)
+        public ActionResult<Doctor> GetDoctorByPassword(string Password)
         {
-            var doctor = _context.Doctor.FirstOrDefault(d => d.Password == sifre);
+            var doctor = _context.Doctor.FirstOrDefault(d => d.Password == Password);
             if (doctor == null)
             {
                 return NotFound();
@@ -89,10 +93,11 @@ namespace webapi.Controllers
 
             if (doctor == null)
             {
-                return Ok(new { doctorInfo = (Doctor)null, success = false });
+                return Unauthorized(); // 401 Unauthorized
             }
 
-            return Ok(new { doctorInfo = doctor, doctorInfo1 = doctor.FirstName, doctorInfo2 = doctor.LastName, success = true });
+            var token = GenerateJwtToken(doctor);
+            return Ok(new { DoctorInfo = doctor, token });
         }
 
         [HttpPost]
@@ -106,8 +111,6 @@ namespace webapi.Controllers
             _context.SaveChanges();
             return Ok();
         }
-        //sonnnnnxdcf
-
 
         [HttpPut("{id}")]
         public IActionResult UpdateDoctor(int id, [FromBody] Doctor updatedDoctor)
@@ -135,11 +138,6 @@ namespace webapi.Controllers
             return Ok("Güncelleme başarılı.");
         }
 
-
-        
-
-
-
         [HttpDelete("{id}")]
         public IActionResult DeleteDoctor(int id)
         {
@@ -154,6 +152,25 @@ namespace webapi.Controllers
 
             _context.SaveChanges();
             return Ok(new { message = "Doktor başarıyla silindi." });
+        }
+
+        private string GenerateJwtToken(Doctor doctor)
+        {
+            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, doctor.Email)
+                }),
+                Expires = DateTime.UtcNow.AddMinutes(Convert.ToInt32(_configuration["Jwt:ExpiryMinutes"])),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
+                Issuer = _configuration["Jwt:Issuer"],
+                Audience = _configuration["Jwt:Audience"]
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
         }
     }
 

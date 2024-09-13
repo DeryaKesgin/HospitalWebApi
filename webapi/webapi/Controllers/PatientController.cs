@@ -1,20 +1,28 @@
-﻿using webapi.Models;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
+using System.IdentityModel.Tokens.Jwt;
+using System.Numerics;
+using System.Security.Claims;
+using System.Text;
+using webapi.Models;
 
 namespace webapi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class PatientController : ControllerBase
     {
         private readonly SampleDBContext _context;
+        private readonly IConfiguration _configuration;
 
-        public PatientController(SampleDBContext context)
+        public PatientController(SampleDBContext context, IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration;
         }
 
         [HttpGet("WithFilter")]
@@ -119,10 +127,12 @@ namespace webapi.Controllers
 
             if (patient == null)
             {
-                return Ok(new { PatientInfo = (Patient)null, success = false });
+                return Unauthorized(); // 401 Unauthorized
+                
             }
 
-            return Ok(new { PatientInfo = patient, success = true });
+            var token = GenerateJwtToken(patient);
+            return Ok(new { PatientInfo = patient, token });
         }
 
         [HttpPost]
@@ -179,6 +189,28 @@ namespace webapi.Controllers
 
             return Ok("Silme işlemi başarılı.");
         }
+
+
+        private string GenerateJwtToken(Patient patient)
+        {
+            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, patient.Email)
+                }),
+                Expires = DateTime.UtcNow.AddMinutes(Convert.ToInt32(_configuration["Jwt:ExpiryMinutes"])),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
+                Issuer = _configuration["Jwt:Issuer"],
+                Audience = _configuration["Jwt:Audience"]
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
+        }
+
+
     }
 
     public class PatientRequest

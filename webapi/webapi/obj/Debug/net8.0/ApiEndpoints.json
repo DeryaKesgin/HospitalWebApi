@@ -279,13 +279,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "sifre",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
         "Name": "Password",
-        "Type": "",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

@@ -1,14 +1,11 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace webapi.Models { 
     public partial class SampleDBContext : DbContext
     {
         public SampleDBContext(DbContextOptions
         <SampleDBContext> options)
-            : base(options)
-        {
-        }
+            : base(options){ }
         public virtual DbSet<Patient> Patient { get; set; }
         public virtual DbSet<Doctor> Doctor { get; set; }
         public virtual DbSet<Admin> Admin { get; set; }
@@ -39,12 +36,8 @@ namespace webapi.Models {
             modelBuilder.Entity<Examination>(entity => {
                 entity.HasKey(k => k.Id);
             });
-
-
             OnModelCreatingPartial(modelBuilder);
         }
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
-
-
     }
 }

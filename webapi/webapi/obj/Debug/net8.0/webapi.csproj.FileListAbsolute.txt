@@ -275,3 +275,4 @@ C:\Users\derya\OneDrive\Belgeler\GitHub\HospitalWebApi\webapi\webapi\obj\Debug\n
 C:\Users\derya\OneDrive\Belgeler\GitHub\HospitalWebApi\webapi\webapi\obj\Debug\net8.0\webapi.pdb
 C:\Users\derya\OneDrive\Belgeler\GitHub\HospitalWebApi\webapi\webapi\obj\Debug\net8.0\webapi.genruntimeconfig.cache
 C:\Users\derya\OneDrive\Belgeler\GitHub\HospitalWebApi\webapi\webapi\obj\Debug\net8.0\ref\webapi.dll
+C:\Users\derya\OneDrive\Belgeler\GitHub\HospitalWebApi\webapi\webapi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

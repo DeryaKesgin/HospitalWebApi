@@ -1,9 +1,11 @@
-﻿// Controllers/CustomerController.cs
-
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using webapi.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
+using System.Numerics;
 
 namespace webapi.Controllers
 {
@@ -12,21 +14,22 @@ namespace webapi.Controllers
     public class AdminController : ControllerBase
     {
         private readonly SampleDBContext _context;
-        public AdminController(SampleDBContext context)
+        private readonly IConfiguration _configuration;
+
+        public AdminController(SampleDBContext context, IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration;
         }
 
-        // GET: api/Customer
+        // GET: api/Admin
         [HttpGet]
         public ActionResult<IEnumerable<Admin>> GetList()
         {
             return _context.Admin.ToList();
         }
 
-        
-
-        // GET: api/Customer/1
+        // GET: api/Admin/UserName/{UserName}
         [HttpGet("UserName/{UserName}")]
         public ActionResult<Admin> GetUsername(string UserName)
         {
@@ -38,6 +41,7 @@ namespace webapi.Controllers
             return admin;
         }
 
+        // GET: api/Admin/Password/{Password}
         [HttpGet("Password/{Password}")]
         public ActionResult<Admin> GetPassword(string Password)
         {
@@ -49,6 +53,7 @@ namespace webapi.Controllers
             return admin;
         }
 
+        // POST: api/Admin/Login
         [HttpPost("Login")]
         public IActionResult Login([FromBody] AdminRequest LoginModel)
         {
@@ -62,14 +67,14 @@ namespace webapi.Controllers
 
             if (admin == null)
             {
-                return Ok(new { adminInfo = (Admin)null, success = false });
+                return Unauthorized(); // 401 Unauthorized
             }
 
-            return Ok(new { adminInfo = admin, success = true });
+            var token = GenerateJwtToken(admin);
+            return Ok(new { AdminInfo = admin, token });
         }
 
-
-        // POST: api/Customer
+        // POST: api/Admin
         [HttpPost]
         public ActionResult<Admin> CreateAdmin(Admin admin)
         {
@@ -78,9 +83,28 @@ namespace webapi.Controllers
                 return BadRequest();
             }
 
-            _context.Admin.Add(admin);  
+            _context.Admin.Add(admin);
             _context.SaveChanges();
             return Ok();
+        }
+
+        private string GenerateJwtToken(Admin admin)
+        {
+            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, admin.Email)
+                }),
+                Expires = DateTime.UtcNow.AddMinutes(Convert.ToInt32(_configuration["Jwt:ExpiryMinutes"])),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
+                Issuer = _configuration["Jwt:Issuer"],
+                Audience = _configuration["Jwt:Audience"]
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
         }
     }
 

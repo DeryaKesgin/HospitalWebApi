@@ -1,7 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using webapi.Models;
-using System.Linq;
 
 namespace webapi.Controllers
 {
@@ -10,9 +15,12 @@ namespace webapi.Controllers
     public class ExaminationController : ControllerBase
     {
         private readonly SampleDBContext _context;
-        public ExaminationController(SampleDBContext context)
+        private readonly string _key;
+
+        public ExaminationController(SampleDBContext context, IConfiguration configuration)
         {
             _context = context;
+            _key = configuration["Jwt:Key"];
         }
 
         // Yeni muayene eklemek için
@@ -69,11 +77,11 @@ namespace webapi.Controllers
             }
 
             List<ExaminationView> tempList = new List<ExaminationView>();
- 
+
             foreach (Examination item in examinationList)
             {
-                string json = Newtonsoft.Json.JsonConvert.SerializeObject(item);
-                ExaminationView obj = Newtonsoft.Json.JsonConvert.DeserializeObject<ExaminationView>(json);
+                string json = JsonConvert.SerializeObject(item);
+                ExaminationView obj = JsonConvert.DeserializeObject<ExaminationView>(json);
 
                 List<Patient> list = patientList.Where(x => x.PatientId == item.PatientId).ToList();
                 if (list.Count > 0)
@@ -92,9 +100,6 @@ namespace webapi.Controllers
 
             return Ok(tempList);
         }
-
-
-
 
         // Hasta ID'sine göre muayene geçmişini getirmek için
         [HttpGet("History/{PatientId}")]
@@ -133,6 +138,5 @@ namespace webapi.Controllers
 
             return Ok(examinations);
         }
-
     }
 }
